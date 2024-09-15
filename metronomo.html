@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metrónomo - ABC Music</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="inicio.html"><img src="logoabcmusic.png"></a>
+        <ul class="nav-links">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="metronomo.html">Metrónomo</a></li>
+            <li><a href="afinador.html">Afinador</a></li>
+            <li><a href="piano.html">Piano</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h1>Metrónomo</h1>
+        
+        <!-- Botón de play debajo del título -->
+        <button id="startStopBtn" class="play-button"></button>
+
+        <!-- Barra de BPM (horizontal) -->
+        <div class="controls">
+            <div class="knob-container">
+                <input type="range" id="bpmKnob" min="40" max="240" value="120">
+            </div>
+        </div>
+
+        <div class="metronome-display">
+            <div class="light"></div>
+        </div>
+
+        <!-- BPM seleccionado -->
+        <div id="bpmDisplay">120 BPM</div>
+
+        <!-- Lista de términos musicales dependiendo del BPM -->
+        <div id="bpm-range-list">
+            <p id="bpm-range">Moderato: 108-120 bpm</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
